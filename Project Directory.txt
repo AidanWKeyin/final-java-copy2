@@ -1,0 +1,39 @@
+Final-JAVA-COPY2
+│
+├── pom.xml                     # Maven build file (defines dependencies, build, plugins)
+├── README.md                   # Project overview and instructions
+├── .gitignore                  # Files and folders to ignore in Git
+│
+├── src/
+│   └── main/
+│       └── java/
+│           └── service/        # Main Java package
+│               ├── Main.java               # Entry point of the application
+│               ├── dao/                     # Data Access Objects for DB operations
+│               │   ├── UserDAO.java
+│               │   ├── WorkoutClassDAO.java
+│               │   ├── MembershipDAO.java
+│               │   └── GymMerchDAO.java
+│               │
+│               ├── models/                 # Entity classes representing DB tables
+│               │   ├── User.java
+│               │   ├── Admin.java
+│               │   ├── Trainer.java
+│               │   ├── Member.java
+│               │   ├── WorkoutClass.java
+│               │   ├── Membership.java
+│               │   └── GymMerch.java
+│               │
+│               ├── services/               # Business logic layer
+│               │   ├── UserService.java
+│               │   ├── WorkoutClassService.java
+│               │   ├── MembershipService.java
+│               │   └── GymMerchService.java
+│               │
+│               └── utils/                  # Utility classes
+│                   ├── DBConnection.java   # PostgreSQL connection helper
+│                   └── LoggerUtil.java     # Logging utility
+│
+└── src/
+    └── main/
+        └── resources/                      # Optional resources (config files, SQL scripts)
